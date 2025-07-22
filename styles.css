@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    background-color: rgb(62, 85, 230);
+    height: 120px;
+    margin: 10px  15px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: rgb(224, 223, 223);
+}
+#task{
+    background-color: white;
+    width: 20%;
+    height: 350px;
+    margin: 15px;
+    box-shadow: 1px 1px 2px 2px rgb(93, 93, 93);
+    border-radius: 10px;
+    padding: 20px;
+    left: 30px;
+}
+h2{
+    color: rgb(62, 85, 230);
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#task input{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(62, 85, 230);
+    border-radius: 5px;
+    font-size: 15px;
+}
+#task select{
+    width:97%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(62, 85, 230);
+    border-radius: 5px;
+    font-size: 15px;
+}
+#task label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button{
+    background-color: rgb(62, 85, 230);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(50, 70, 190);
+}
+#main{
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    gap: 10px;
+    /* margin: 20px; */
+    
+}
+.table{
+   background-color: white;
+    width: 72%;
+    height: 250px;
+    margin: 15px;
+    /* padding: 20px; */
+    left: 30px;
+    box-shadow: 1px 1px 2px 2px rgb(93, 93, 93);
+    border-radius: 10px;
+}
+.table th:first-child {
+    border-top-left-radius: 10px;
+}
+.table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* Bottom left and right corners */
+.table tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+.table tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+.table table{
+
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    
+    /* margin-top: 20px; */
+}
+.table table th{
+    background-color: rgb(62, 85, 230);
+    color: white;
+    height: 50px;
+    text-align: left;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#pending{
+    background-color:orange;
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+    color: white;   
+}
+.table table td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#complete{
+    background-color: green;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+    /* font-size: 20px; */
+    color: white;
+}
+#overdue{
+    background-color: red;
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+    color: white;
+}
+footer{
+    background-color: rgb(67, 65, 65);
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 1%;
+    right: 0%;
+    left: 0%;
+    height: 30px;
+    /* width: 100%; */
+    margin: 8px 15px;
+    border-radius: 5px 5px;
+}

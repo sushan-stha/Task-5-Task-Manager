@@ -1,174 +1,419 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-#navbar{
-    background-color: rgb(62, 85, 230);
-    height: 120px;
-    margin: 10px  15px;
-    border-radius: 10px 10px 0 0;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-h1{
-    padding: 10px;
-    margin-top: 10px;
-    padding-bottom: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 2px;
-    font-size: 45px;
-}
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: rgb(224, 223, 223);
-}
-#task{
-    background-color: white;
-    width: 20%;
-    height: 350px;
-    margin: 15px;
-    box-shadow: 1px 1px 2px 2px rgb(93, 93, 93);
-    border-radius: 10px;
-    padding: 20px;
-    left: 30px;
-}
-h2{
-    color: rgb(62, 85, 230);
-    padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#task input{
-    width: 90%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid rgb(62, 85, 230);
-    border-radius: 5px;
-    font-size: 15px;
-}
-#task select{
-    width:97%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid rgb(62, 85, 230);
-    border-radius: 5px;
-    font-size: 15px;
-}
-#task label{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-button{
-    background-color: rgb(62, 85, 230);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    margin-top: 10px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-button:hover{
-    background-color: rgb(50, 70, 190);
-}
-#main{
-    display: flex;
-    /* justify-content: space-evenly; */
-    flex-wrap: wrap;
-    gap: 10px;
-    /* margin: 20px; */
-    
-}
-.table{
-   background-color: white;
-    width: 72%;
-    height: 250px;
-    margin: 15px;
-    /* padding: 20px; */
-    left: 30px;
-    box-shadow: 1px 1px 2px 2px rgb(93, 93, 93);
-    border-radius: 10px;
-}
-.table th:first-child {
-    border-top-left-radius: 10px;
-}
-.table th:last-child {
-    border-top-right-radius: 10px;
-}
+            margin: 0;
+            padding: 0;
+        }
+        #navbar{
+            background-color: rgb(62, 85, 230);
+            height: 120px;
+            margin: 5px  10px;
+            border-radius: 10px 10px 0 0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1{
+            padding: 10px;
+            margin-top: 10px;
+            padding-bottom: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 2px;
+            font-size: 45px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: rgb(224, 223, 223);
+        }
+        #task{
+            background-color: white;
+            width: 20%;
+            height: 350px;
+            margin: 15px;
+            box-shadow: 1px 1px 2px 2px rgb(93, 93, 93);
+            border-radius: 10px;
+            padding: 20px;
+            left: 30px;
+        }
+        h2{
+            color: rgb(62, 85, 230);
+            padding-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #task input{
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid rgb(62, 85, 230);
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        #task select{
+            width:97%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid rgb(62, 85, 230);
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        #task label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: black;
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        button{
+            background-color: rgb(62, 85, 230);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin-top: 10px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(50, 70, 190);
+        }
+        #main{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .table{
+           background-color: white;
+            width: 72%;
+            height: 250px;
+            margin: 15px;
+            left: 30px;
+            box-shadow: 1px 1px 2px 2px rgb(93, 93, 93);
+            border-radius: 10px;
+        }
+        .table th:first-child {
+            border-top-left-radius: 10px;
+        }
+        .table th:last-child {
+            border-top-right-radius: 10px;
+        }
+        .table tr:last-child td:first-child {
+            border-bottom-left-radius: 20px;
+        }
+        .table tr:last-child td:last-child {
+            border-bottom-right-radius: 20px;
+        }
+        .table table{
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 20px;
+        }
+        .table table th{
+            background-color: rgb(62, 85, 230);
+            color: white;
+            height: 50px;
+            text-align: left;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .status-badge{
+            border-radius: 20px;
+            text-align: center;
+            height: 20px;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            min-width: 70px;
+        }
+        .table table td{
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .delete-btn{
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 0;
+        }
+        .delete-btn:hover{
+            background-color: #c82333;
+        }
+        #pending{
+            background-color:orange;
+            border-radius: 20px;
+            width: 70px;
+            text-align: center;
+            height: 20px;
+            padding: 5px;
+            color: white;   
+    }
+            #complete{
+            background-color: green;
+            border-radius: 20px;
+            width: 100px;
+            text-align: center;
+            height: 20px;
+            padding: 5px;
+            /* font-size: 20px; */
+            color: white;
+        }
+        #overdue{
+            background-color: red;
+            border-radius: 20px;
+            width: 70px;
+            text-align: center;
+            height: 20px;
+            padding: 5px;
+            color: white;
+        }
+        footer{
+            background-color: rgb(67, 65, 65);
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            left: 0%;
+            height: 30px;
+            margin: 8px 15px;
+            border-radius: 5px 5px;
+        }
+        @media screen and (max-width: 1374px) {
+            #task, .table {
+                width: 80%;
+                margin: 10px auto;
+            }
+            h1 {
+                font-size: 45px;
+            }
+            #main {
+                flex-direction: row;
+                align-items: center;
+            }
+            button {
+                width: 100%;
+            }
+            footer {
+                position:relative;
+                bottom: 0;
+                width: 100%;
+                /* margin-top: 20%; */
+                left: 0;
+                right: 0;
+                padding: 10px;
+                font-size: 14px;
 
-/* Bottom left and right corners */
-.table tr:last-child td:first-child {
-    border-bottom-left-radius: 20px;
-}
-.table tr:last-child td:last-child {
-    border-bottom-right-radius: 20px;
-}
-.table table{
-
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 20px;
-    
-    /* margin-top: 20px; */
-}
-.table table th{
-    background-color: rgb(62, 85, 230);
-    color: white;
-    height: 50px;
-    text-align: left;
-    padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-#pending{
-    background-color:orange;
-    border-radius: 20px;
-    width: 70px;
-    text-align: center;
-    height: 20px;
-    padding: 5px;
-    color: white;   
-}
-.table table td{
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#complete{
-    background-color: green;
-    border-radius: 20px;
-    width: 100px;
-    text-align: center;
-    height: 20px;
-    padding: 5px;
-    /* font-size: 20px; */
-    color: white;
-}
-#overdue{
-    background-color: red;
-    border-radius: 20px;
-    width: 70px;
-    text-align: center;
-    height: 20px;
-    padding: 5px;
-    color: white;
-}
-footer{
-    background-color: rgb(67, 65, 65);
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 1%;
-    right: 0%;
-    left: 0%;
-    height: 30px;
-    /* width: 100%; */
-    margin: 8px 15px;
-    border-radius: 5px 5px;
-}
+            }
+            
+        }
+        @media screen and (max-width: 1280px) {
+            #task, .table {
+                width: 90%;
+                margin: 10px auto;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            #main {
+                flex-direction: column;
+                align-items: center;
+            }
+            button {
+                width: 100%;
+            }
+            footer {
+                position: relative;
+                bottom: 0;
+                width: auto;
+                margin-top: 5%;
+            }
+            
+        }
+        @media screen and (max-width: 1024px) {
+            #task, .table {
+                width: 80%;
+                margin: 10px auto;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            #main {
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            button {
+                width: 100%;
+            }
+            footer {
+                position: relative;
+                bottom: 0;
+                width: auto;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            #task{
+                width: 90%;
+                margin: 10px auto;
+            }
+            .table{
+                width: 90%;
+                margin: 1px auto;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            #main {
+                flex-direction: column;
+                align-items: center;
+            }
+            button {
+                width: 100%;
+            }
+            footer {
+                position: relative;
+                bottom: 0;
+                width: auto;
+                margin-top: 15%;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+                padding-bottom: 10px;
+                width: 100%;
+            }
+            #task {
+                width: 98%;
+                margin: 5px auto;
+                padding: 8px;
+                height: auto;
+                min-width: unset;
+                margin-left: 5px;
+                box-sizing: border-box;
+            }
+            #task input,
+            #task select {
+                width: 95%;
+                font-size: 13px;
+                padding: 7px;
+            }
+            .table {
+                width: 98%;
+                margin: 2px 5px;
+                font-size: 13px;
+                padding: 0;
+                overflow-x: auto;
+                box-sizing: border-box;
+                height: auto;
+                min-width: unset;
+                margin-top: 5%;
+            }
+            .table table {
+                min-width: 350px;
+                font-size: 12px;
+                width: 100%;
+            }
+            .table table th,
+            .table table td {
+                padding: 7px;
+                font-size: 12px;
+                word-break: break-word;
+            }
+            button {
+                padding: 8px;
+                font-size: 13px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            #navbar {
+                padding: 5px;
+                font-size: 13px;
+                height: auto;
+                margin: 5px 2px;
+            }
+            #main {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+            footer {
+                font-size: 11px;
+                padding: 7px;
+                height: auto;
+                margin: 5px 2px;
+                margin-top: 40%;
+                position: relative;
+                bottom: 0;
+            }
+        }
+        @media screen and (max-width: 380px) {
+            h1 {
+                font-size: 25px;
+                padding-bottom: 8px;
+            }
+            h2{
+                font-size: 18px;
+                padding-bottom: 15px;
+            }
+            #task {
+                margin-top: 15px;
+                padding: 6px;
+                width: 97%;
+                height: auto;
+                min-width: unset;
+                margin-left: 10px;
+            }
+            #task input,
+            #task select {
+                width: 90%;
+                font-size: 12px;
+                padding: 6px;
+            }
+            .table {
+                margin-top: 15px;
+                width: 97%; 
+                font-size: 11px;
+                margin-left: 10px;
+                padding: 0;
+                overflow-x: auto;
+                box-sizing: border-box;
+            }
+            .table table th,
+            .table table td {
+                padding: 5px;
+                font-size: 10px;
+            }
+            button {
+                padding: 6px;
+                font-size: 11px;
+            }
+            #navbar {
+                margin-top: 2%;
+                font-size: 15px;
+                padding: 2px;
+                margin-left: 10px;
+            }
+            #complete, #pending, #overdue {
+                font-size: 10px;
+                padding: 3px;
+                height: 15px;
+                width: auto;
+            }
+            footer {
+                margin-top: 15%;
+                font-size: 5px;
+                padding: 5px;
+                height: auto;
+                /* position: inherit; */
+                margin-left: 10px;;
+                width: 95%;
+            }
+        }
